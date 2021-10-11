@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1720 height=1020></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -29,9 +29,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Webgl.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Webgl.data.gz",
-        frameworkUrl: buildUrl + "/Webgl.framework.js.gz",
-        codeUrl: buildUrl + "/Webgl.wasm.gz",
+        dataUrl: buildUrl + "/Webgl.data",
+        frameworkUrl: buildUrl + "/Webgl.framework.js",
+        codeUrl: buildUrl + "/Webgl.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "My project",
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1720px";
+        canvas.style.height = "1020px";
       }
       loadingBar.style.display = "block";
 
